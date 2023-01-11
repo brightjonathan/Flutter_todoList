@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
       SystemUiOverlayStyle(statusBarColor: 
       Colors.transparent )
     );
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
      home: Home()
      );
   }
 }
+
