@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
+import './Screen/home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,21 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, 
-        home: NextPage());
-  }
-}
-
-class NextPage  extends StatelessWidget {
-  const NextPage ({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(' App Again '),
-      ),
+    
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: 
+      Colors.transparent )
     );
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+     home: Home()
+     );
   }
 }
