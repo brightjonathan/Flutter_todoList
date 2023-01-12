@@ -16,8 +16,6 @@ class toDo {
       toDo(id: '01', todoText: 'Morning prayers', isComplete: true),
       toDo(id: '02', todoText: 'code', isComplete: true),
       toDo(id: '03', todoText: 'Sleep', ),
-      toDo(id: '04', todoText: 'Play football', ), 
-      toDo(id: '05', todoText: 'Dance', ),  
     ];
   }
 }
